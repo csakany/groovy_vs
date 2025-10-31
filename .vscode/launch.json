@@ -1,0 +1,63 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Debug current Groovy file",
+      "request": "launch",
+      // Use Groovy’s launcher
+      "mainClass": "org.codehaus.groovy.tools.GroovyStarter",
+      // Tell GroovyStarter to run GroovyMain on the current file
+      "args": [
+        "--main",
+        "groovy.ui.GroovyMain",
+        "${file}"
+      ],
+      // Explicit classpath so the debugger can find Groovy + your libs/resources
+      "classPaths": [
+        "${workspaceFolder}\\libs\\cpi-mock-msg.jar",
+        "${workspaceFolder}\\libs\\groovy-all-2.4.21.jar",
+        "${workspaceFolder}\\libs\\camel-api-3.14.7.jar",
+        "${workspaceFolder}\\libs\\camel-base-3.14.7.jar",
+        "${workspaceFolder}\\libs\\camel-base-engine-3.14.7.jar",
+        "${workspaceFolder}\\libs\\camel-core-engine-3.14.7.jar",
+        "${workspaceFolder}\\libs\\camel-core-languages-3.14.7.jar",
+        "${workspaceFolder}\\libs\\camel-core-model-3.14.7.jar",
+        "${workspaceFolder}\\libs\\camel-support-3.14.7.jar",
+        "${workspaceFolder}\\libs\\camel-util-3.14.7.jar",
+        "${workspaceFolder}\\libs\\slf4j-api-1.7.36.jar",
+        "${workspaceFolder}\\libs\\slf4j-simple-1.7.36.jar",
+        "${workspaceFolder}\\src\\main\\resources",
+        "${workspaceFolder}\\src\\test"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      // Helpful on Windows to avoid command-line length issues
+      "shortenCommandLine": "jarmanifest"
+    },
+    // {
+    //   "type": "java",
+    //   "name": "Debug Current Groovy File",
+    //   "request": "launch",
+    //   "mainClass": "org.codehaus.groovy.tools.GroovyStarter",
+    //   "classPaths": [
+    //     "${workspaceFolder}/libs/groovy-all-2.4.21.jar",    // or 3.0.21 if you moved up
+    //     "${workspaceFolder}/libs/*",
+    //     "${workspaceFolder}/src/main/resources",
+    //     "${workspaceFolder}/src/test"
+    //   ],
+    //   "args": [
+    //     "--classpath",
+    //     "${workspaceFolder}/libs/*:${workspaceFolder}/src/main/resources:${workspaceFolder}/src/test",
+    //     "--main",
+    //     "groovy.ui.GroovyMain",
+    //     "${file}"                                           // active editor file
+    //   ],
+    //   "vmArgs": "-Dgroovy.grape.enable=false",
+    //   "cwd": "${workspaceFolder}",
+    //   "console": "integratedTerminal",
+    //   "stopOnEntry": true,                                  // pause as soon as the JVM starts
+    //   "stepFilters": { "skipClasses": [] }                  // don’t skip Groovy runtime frames
+    // }
+  ]
+}

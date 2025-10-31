@@ -1,0 +1,12 @@
+{
+  "groovyRunner.classpath": "${workspaceFolder}\\libs\\cpi-mock-msg.jar;${workspaceFolder}\\libs\\groovy-all-2.4.21.jar;${workspaceFolder}\\libs\\camel-api-3.14.7.jar;${workspaceFolder}\\libs\\camel-base-3.14.7.jar;${workspaceFolder}\\libs\\camel-base-engine-3.14.7.jar;${workspaceFolder}\\libs\\camel-core-engine-3.14.7.jar;${workspaceFolder}\\libs\\camel-core-languages-3.14.7.jar;${workspaceFolder}\\libs\\camel-core-model-3.14.7.jar;${workspaceFolder}\\libs\\camel-support-3.14.7.jar;${workspaceFolder}\\libs\\camel-util-3.14.7.jar;${workspaceFolder}\\libs\\slf4j-api-1.7.36.jar;${workspaceFolder}\\libs\\slf4j-simple-1.7.36.jar;${workspaceFolder}\\src\\main\\resources;${workspaceFolder}\\src\\test",
+  "code-runner.runInTerminal": true,
+  "code-runner.ignoreSelection": true,
+  "code-runner.cwd": "$workspaceRoot",
+  "code-runner.executorMap": {
+    "groovy": "java -cp \"libs\\cpi-mock-msg.jar;libs\\groovy-all-2.4.21.jar;libs\\camel-api-3.14.7.jar;libs\\camel-base-3.14.7.jar;libs\\camel-base-engine-3.14.7.jar;libs\\camel-core-engine-3.14.7.jar;libs\\camel-core-languages-3.14.7.jar;libs\\camel-core-model-3.14.7.jar;libs\\camel-support-3.14.7.jar;libs\\camel-util-3.14.7.jar;libs\\slf4j-api-1.7.36.jar;libs\\slf4j-simple-1.7.36.jar;src\\main\\resources;src\\test\" groovy.ui.GroovyMain $fullFileName"
+  },
+  "code-runner.executorMapByFileExtension": {
+    ".groovy": "java -cp \"libs\\cpi-mock-msg.jar;libs\\groovy-all-2.4.21.jar;libs\\camel-api-3.14.7.jar;libs\\camel-base-3.14.7.jar;libs\\camel-base-engine-3.14.7.jar;libs\\camel-core-engine-3.14.7.jar;libs\\camel-core-languages-3.14.7.jar;libs\\camel-core-model-3.14.7.jar;libs\\camel-support-3.14.7.jar;libs\\camel-util-3.14.7.jar;libs\\slf4j-api-1.7.36.jar;libs\\slf4j-simple-1.7.36.jar;src\\main\\resources;src\\test\" groovy.ui.GroovyMain $fullFileName"
+  },
+}
